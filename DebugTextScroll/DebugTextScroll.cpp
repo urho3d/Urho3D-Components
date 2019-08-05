@@ -1,4 +1,4 @@
-#include "Asteroids/Util/DebugTextScroll.hpp"
+#include "DebugTextScroll.hpp"
 
 #include <Urho3D/Core/Context.h>
 #include <Urho3D/Core/CoreEvents.h>
@@ -11,8 +11,6 @@
 #include <Urho3D/UI/Font.h>
 
 using namespace Urho3D;
-
-namespace Asteroids {
 
 // ----------------------------------------------------------------------------
 DebugTextScroll::DebugTextScroll(Context* context) :
@@ -118,4 +116,3 @@ void DebugTextScroll::HandleLogMessage(StringHash eventType, VariantMap& eventDa
     Print(eventData[P_MESSAGE].GetString(), color);
 }
 
-}
